@@ -10,5 +10,9 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/eda/driver')
+def about():
+    return render_template('driver_eda.html')
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
